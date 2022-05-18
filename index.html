@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <div class="chatbot">
+      <div class="chatbot-text-box">
+        <h2 class="heading">Chatbot</h2>
+        <div class="messagebox">
+          <div class="user-box">
+            <div class="user-text-style">
+              <p class="user-text" id="userText"></p>
+            </div>
+          </div>
+
+          <div class="chatbot-box">
+            <div class="chatbot-text-style">
+              <p class="user-text" id="chatbotText"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="chatbot-form">
+          <div>
+            <input
+              id="your-message"
+              type="text"
+              placeholder="Your message"
+              autocomplete="off"
+            />
+          </div>
+
+          <button class="btn btn--form" onclick="chatbot(), submitText()">
+            Send
+          </button>
+        </div>
+      </div>
+      <div class="chatbot-img-box" role="img"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
